@@ -101,10 +101,23 @@ a {
 /* media query */
 @media (max-width: 840px) {
     #main-title-container {
-        width: 100vw
+        width: 100%;
     }
 
     ul {
-        width: 100vw;
+        width: 100%;
+    }
+
+    .thumbnail {
+        margin-left: 20px;
+    }
+
+
+    #main-title {
+        flex-direction: column;
+    }
+
+    #main-img {
+        margin-bottom: 20px;
     }
 }

@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    width: 100%;
 }
 
 img {
@@ -60,4 +61,10 @@ h1 {
     position: fixed;
     bottom: 0px;
     right: 15px;
+}
+
+@media (max-width: 840px) {
+    img {
+        width: 100%;
+    }
 }
