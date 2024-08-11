@@ -2,6 +2,7 @@ body {
     margin: 0;
     /* background-color: #292c35;
     color: white; */
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 /* main title */
@@ -39,8 +40,8 @@ hr {
     border-top: #999;
 }
 
-#first-btn {
-    background-color: #003566;
+.first-btn {
+    background-color: #00a6fb;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 5px;
@@ -48,8 +49,24 @@ hr {
     font-weight: bold;
 }
 
+.bottom-first-btn {
+    display: none;
+}
 
-/* list */
+/* chapter info */
+.content-info {
+    display: flex;
+    width: 840px;
+    margin: 0 auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#order {
+    cursor: pointer;
+}
+
+/* contents list */
 ul {
     padding: 0;
     list-style: none;
@@ -88,6 +105,7 @@ ul {
 
 .date {
     color: #999;
+    font-size: smaller;
 }
 
 p {
@@ -96,6 +114,12 @@ p {
 
 a {
     text-decoration: none;
+}
+
+/* footer */
+footer {
+    padding: 50px 0px;
+    text-align: center;
 }
 
 /* media query */
@@ -120,5 +144,27 @@ a {
     #main-img {
         margin-bottom: 20px;
         margin-right: 0;
+    }
+
+    .top-first-btn {
+        display: none;
+    }
+
+    .bottom-first-btn {
+        padding: 10px 0px;
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    .content-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        box-sizing: border-box;
     }
 }
