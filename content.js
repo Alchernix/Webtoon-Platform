@@ -10,7 +10,7 @@ window.onload = function () {
     let imgs = ""
     for (i = 0; i < data[idx].images.length; i++) {
         imgs += `
-        <img src="${data[idx].images[i]}">
+        <img loading="lazy" src="${data[idx].images[i]}">
         `
     }
     imgContainer.innerHTML = imgs
