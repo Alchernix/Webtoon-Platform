@@ -21,7 +21,7 @@ function renderFromNew() {
     for (let i = 0; i < data.length; i++) {
         innerHtml += `
     <li>
-        <a href="${data[i].url}" class="item-lst">
+        <a href="content.html?page=${i}" class="item-lst">
             <div class="thumbnail">
                 <img src="${data[i].thumbnail}">
             </div>
