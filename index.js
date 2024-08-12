@@ -34,7 +34,10 @@ function renderFromNew() {
     `
     }
     contentList.innerHTML = innerHtml
-
+    const lastread = localStorage.getItem("lastread")
+    if (lastread) {
+        contentList.children[lastread].innerHTML += `<div class="bookmark"></div>`
+    }
 }
 
 function renderFromOld() {
@@ -55,7 +58,10 @@ function renderFromOld() {
     `
     }
     contentList.innerHTML = innerHtml
-
+    const lastread = localStorage.getItem("lastread")
+    if (lastread) {
+        contentList.children[data.length - lastread - 1].innerHTML += `<div class="bookmark"></div>`
+    }
 }
 
 renderFromOld()

@@ -38,5 +38,16 @@ const data = [
             "images/06.jpg",
             "images/06-ex.jpg"
         ]
+    },
+    {
+        title: "*07~*09",
+        thumbnail: "thumbnail/07~09.png",
+        date: "2014.02.06",
+        images: [
+            "images/07.jpg",
+            "images/08.jpg",
+            "images/09.jpg",
+            "images/09-ex.jpg"
+        ]
     }
 ]

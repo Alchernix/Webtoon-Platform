@@ -28,6 +28,7 @@ window.onload = function () {
     } else {
         nextLink.setAttribute("href", `content.html?page=${idx + 1}`)
     }
+    localStorage.setItem("lastread", idx)
 }
 
 const titleContainer = document.getElementById("title-container")

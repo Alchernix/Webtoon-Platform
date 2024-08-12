@@ -76,6 +76,10 @@ ul {
     border-top: 1px solid #e0e0e0;
 }
 
+li {
+    position: relative;
+}
+
 .item-lst {
     display: flex;
     padding: 8px 0;
@@ -120,6 +124,17 @@ a {
 footer {
     padding: 50px 0px;
     text-align: center;
+}
+
+/* 책갈피 */
+.bookmark {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #e0e0e0;
+    border-right: 30px solid transparent;
 }
 
 /* media query */
