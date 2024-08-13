@@ -1,6 +1,9 @@
 const contentList = document.getElementById("content-list")
 const chapters = document.getElementById("chapters")
 const orderBtn = document.getElementById("order")
+const mainImg = document.getElementById("main-img")
+const mainImgBig = document.getElementById("main-img-big-container")
+const container = document.getElementById("container")
 let order = 1 //1 -> 최신화부터, 0 -> 1화부터
 chapters.textContent = `총 ${data.length}화`
 
@@ -65,3 +68,13 @@ function renderFromOld() {
 }
 
 renderFromOld()
+
+mainImg.addEventListener("click", function () {
+    mainImgBig.style.display = "inline"
+    container.style.filter = "blur(5px)"
+})
+
+mainImgBig.addEventListener("click", function () {
+    container.style = ""
+    mainImgBig.style.display = "none"
+})

@@ -14,32 +14,38 @@
 </head>
 
 <body>
-    <div id="main-title-container">
-        <div id="main-title">
-            <div id="main-img">
-                <img src="main-thumbnail.png">
-            </div>
-            <div class="main-info">
-                <h1>아스테리스크!</h1>
-                <p><span class="gray">글/그림</span> 넹깊</p>
-                <p><span class="gray">장르</span> 일상/개그</p>
-                <p>인간과 비인간이 공존하는 오즈마을의 미확인생물체 쥬노는 오늘도 배가 고프다.</p>
-                <hr>
-                <a href="content.html?page=0" class="first-btn top-first-btn">첫 화 보기</a>
+    <div id="container">
+        <div id="main-title-container">
+            <div id="main-title">
+                <div id="main-img">
+                    <img src="main-thumbnail.png">
+                </div>
+                <div class="main-info">
+                    <h1>아스테리스크!</h1>
+                    <p><span class="gray">글/그림</span> 넹깊</p>
+                    <p><span class="gray">장르</span> 일상/개그</p>
+                    <p>인간과 비인간이 공존하는 오즈마을의 미확인생물체 쥬노는 오늘도 배가 고프다.</p>
+                    <hr>
+                    <a href="content.html?page=0" class="first-btn top-first-btn">첫 화 보기</a>
+                </div>
             </div>
         </div>
+        <div class="content-info">
+            <p id="chapters">총 n화</p>
+            <p id="order">⮃최신화부터</p>
+        </div>
+        <ul id="content-list">
+            <!-- 회차 리스트 -->
+        </ul>
+        <a href="content.html?page=0" class="first-btn bottom-first-btn">첫 화 보기</a>
+        <footer>
+            <span class="gray">사이트 정보</span>
+        </footer>
     </div>
-    <div class="content-info">
-        <p id="chapters">총 n화</p>
-        <p id="order">⮃최신화부터</p>
+    <div id="main-img-big-container">
+        <!-- <button id="main-img-big-btn">X</button> -->
+        <img id="main-img-big" src="main-thumbnail-big.jpg">
     </div>
-    <ul id="content-list">
-        <!-- 회차 리스트 -->
-    </ul>
-    <a href="content.html?page=0" class="first-btn bottom-first-btn">첫 화 보기</a>
-    <footer>
-        <span class="gray">사이트 정보</span>
-    </footer>
     <script src="data.js"></script>
     <script src="index.js"></script>
 </body>
