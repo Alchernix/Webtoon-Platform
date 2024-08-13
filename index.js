@@ -70,7 +70,7 @@ function renderFromOld() {
 renderFromOld()
 
 mainImg.addEventListener("click", function () {
-    mainImgBig.style.display = "inline"
+    mainImgBig.style.display = "flex"
     container.style.filter = "blur(5px)"
 })
 
