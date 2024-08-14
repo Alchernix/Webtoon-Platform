@@ -21,7 +21,6 @@ a {
     height: 47px;
     line-height: 47px;
     color: white;
-    display: none;
 }
 
 .menu {
@@ -53,7 +52,6 @@ img {
     line-height: 47px;
     background-color: #292c35;
     color: white;
-    display: none;
 }
 
 .link-container {
@@ -61,6 +59,10 @@ img {
     justify-content: space-between;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+.hide-bar {
+    display: none;
 }
 
 @media (max-width: 840px) {

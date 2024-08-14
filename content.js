@@ -34,16 +34,7 @@ window.onload = function () {
 const titleContainer = document.getElementById("title-container")
 const nav = document.getElementById("nav")
 
-let display = 0;
-
 document.body.addEventListener("click", function () {
-    if (display === 1) {
-        titleContainer.style.display = "none"
-        nav.style.display = "none"
-        display = 0
-    } else {
-        titleContainer.style.display = "block"
-        nav.style.display = "block"
-        display = 1
-    }
+    titleContainer.classList.toggle('hide-bar')
+    nav.classList.toggle('hide-bar')
 })
